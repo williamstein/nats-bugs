@@ -21,7 +21,9 @@ that causes silent filesystem corruption, but they didn't seem
 to agree.
 
 With NATS-io it's disconcerting because this has happened so much. I've watched most of the youtube videos they posted to better understand NATS, and it seems like development is done pretty much 100% by employees of the company (which is fine -- my company is the same), which could explain this pattern. Probably there's other channels where real discussion happens, and I'm not part of them so I can't really argue my case. Or it may be that I'm just bad at
-communicating. In any case, perhaps this repo will help.
+communicating. In any case, perhaps this repo will help.  It will definitely help me personally
+to keep track of all these edge cases, in case I have to maintain some sort of fork or
+patches at some point.
 
 So I'm creating this repo to document this so I can better keep track of it, since the
 issues themselves often get closed. Also, in case I have to maintain a fork of NATS to
