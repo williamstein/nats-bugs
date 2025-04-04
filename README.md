@@ -4,7 +4,9 @@ This repository mainly exists to document bugs or shortcomings in [NATS](https:/
 
 ## Why?
 
-[NATS](https://nats.io/) is an amazing and very powerful high quality piece of software. I love it.
+[NATS](https://nats.io/) is an amazing and very powerful high quality piece of software. I love it. 
+
+**I AM A NATS SUPERFAN.**
 
 Like all software, it has bugs, and there are also many difficult design decisions
 the developers have to make, which balance the needs of wide range of users.
