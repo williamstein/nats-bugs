@@ -2,6 +2,10 @@
 
 This repository mainly exists to document bugs or shortcomings in [NATS](https://nats.io/) that the developers seem to disagree with.
 
+<div style="text-align:center">
+<img src="./conat.png"/>
+</div>
+
 **May 2025 UPDATE:** I've decided to implement something that works much like NATS, but that is very suitable for building a distributed web application with a large number of users.  This will be called "Conat" (for **Co**Calc **Nat**s, but also suggesting "connate" from biology).   See https://github.com/sagemathinc/cocalc/pull/8346   
 Basically NATS has a bunch of excellent API design choices and patterns involving how pub/sub, subject hierarchies, queue groups, etc., all work.  But many of the architectural decisions, e.g., around authentication, scalability of Jetstreams, etc, are extremely bad from my point of view, having really pushed NATS over the last few months.   Also, built with way too much of "Not Invented Here Syndrome", e.g., why spend years building Jetstream as a new database from scratch, rather than using existing mature open source databases (like sqlite)?  Why is the Websocket connectivity with browsers from scratch, rather than being built on mature proven technology like socket.io that solves a wide range of subtle problems involving dropped connections?   
 
