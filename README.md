@@ -6,6 +6,11 @@ This repository mainly exists to document bugs or shortcomings in [NATS](https:/
 <img src="./conat.png"/>
 </div>
 
+**June 2025 UPDATE:** CoCalc now fully runs on Conat, which is a rewrite of many of the concepts from NATS/Jetstream on top of socketio and sqlite3.   [The code is here](https://github.com/sagemathinc/cocalc/tree/master/src/packages/conat).   
+
+> "Conat is a realtime sync engine written in typescript built on socketio and sqlite, which provides distributed streams, key:value stores, and collaborative document editing. It has a similar subject based pub/sub model to NATS.      The architecture scales to a very large number of small streams (unlike NATS), each with their own configuration (user permissions, limits, etc.).   Conat is built on proven and mature components (sqlite, socketio).  "
+
+
 **May 2025 UPDATE:** I've decided to implement something that works much like NATS, but that is very suitable for building a distributed web application with a large number of users.  This will be called "Conat" (for **Co**Calc **Nat**s, but also suggesting "connate" from biology).   See https://github.com/sagemathinc/cocalc/pull/8346   
 Basically NATS has a bunch of excellent API design choices and patterns involving how pub/sub, subject hierarchies, queue groups, etc., all work.  But many of the architectural decisions, e.g., around authentication, scalability of Jetstreams, etc, are extremely bad from my point of view, having really pushed NATS over the last few months.   Also, built with way too much of "Not Invented Here Syndrome", e.g., why spend years building Jetstream as a new database from scratch, rather than using existing mature open source databases (like sqlite)?  Why is the Websocket connectivity with browsers from scratch, rather than being built on mature proven technology like socket.io that solves a wide range of subtle problems involving dropped connections?   
 
